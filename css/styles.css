@@ -1,11 +1,77 @@
-#navMain.navbar-shrink {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    background: rgb(207, 33, 33);
+a {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    color: #42DCA3;
 }
 
-#navMain .nav-link.active {
+a:focus,
+a:hover {
+    text-decoration: none;
+    color: #d36c0c;
+}
+
+#navMain {
+    font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(7, 199, 119, 0.774);
+    background-color: black;
+}
+
+#navMain .navbar-toggler {
+    font-size: 14px;
+    padding: 11px;
+    color: white;
+    border: 1px solid white;
+}
+
+#navMain .navbar-brand {
+    font-weight: 700;
+}
+
+#navMain a {
+    color: white;
+}
+
+#navMain .navbar-nav .nav-item:active,
+#navMain .navbar-nav .nav-item:focus {
     outline: none;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: transparent;
+}
+
+@media (min-width: 992px) {
+    #navMain {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        -webkit-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+        -moz-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+        transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+        letter-spacing: 1px;
+        border-bottom: none;
+        background: transparent;
+    }
+    #navMain.navbar-shrink {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        background-color: rgba(230, 130, 16, 0.74);
+    }
+    #navMain .nav-link.active {
+        outline: none;
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+    #navMain .nav-link.active:hover {
+        color: white;
+    }
+}
+.heading{
+    text-align: center;
+    color: white;
+    background-image: url("../img/background.jpg");
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-top: 28em;
+    padding-bottom: 28em;    
 }
