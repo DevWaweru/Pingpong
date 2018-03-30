@@ -30,7 +30,7 @@
                         <a class="nav-link js-scroll-trigger" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#download">PLAY!</a>
+                        <a class="nav-link js-scroll-trigger" href="#play-now">PLAY!</a>
                     </li>
                 </ul>
             </div>
@@ -50,29 +50,53 @@
     <div class="container" id="about">
         <div class="container about">
             <h1>About Ping Pong</h1>
-            <h3>Level 2 Test for Java</h3><br>
+            <h3>Level 2 Test for Java</h3>
+            <br>
             <h2>Created By:</h2>
-            <h3>Richard Waweru</h3><br>
-            <a href="https://github.com/DevWaweru?tab=repositories" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-github"></i> GITHUB</a>
-            <a href="https://twitter.com/richiewaweru" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-twitter"></i> Twitter</a>
+            <h3>Richard Waweru</h3>
+            <br>
+            <a href="https://github.com/DevWaweru?tab=repositories" class="btn btn-default btn-lg" target="_blank">
+                <i class="fa fa-github"></i> GITHUB</a>
+            <a href="https://twitter.com/richiewaweru" class="btn btn-default btn-lg" target="_blank">
+                <i class="fa fa-twitter"></i> Twitter</a>
         </div>
     </div>
+    <div class="container-fluid" id="play-now">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 description">
+                    <h2>Let's Play!</h2>
+                    <h3>Rules:</h3>
+                    <p>Ping pong will count up to your number from 1 with the following exceptions:</p>
+                    <ol>
+                        <li>Numbers divisible by 3 become 'Ping'</li>
+                        <li>Numbers divisible by 5 become 'Pong'</li>
+                        <li>Numbers divisible by 15 become 'Ping Pong!'</li>
+                    </ol>
+                    <div class="form-group">
+                        <label for="user-input">Enter your number here:</label>
+                        <input type="number" id="user-input" class="form-control" required>
+                    </div>
+                    <a href="" class="btn btn-default btn-lg">Find Out</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <ul id="list-1" class="list-group">
 
-    <div class="row">
-        <div class="col-md-4">
-            <ul id="list-1" class="list-group">
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul id="list-2" class="list-group">
 
-            </ul>
-        </div>
-        <div class="col-md-4">
-            <ul id="list-2" class="list-group">
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul id="list-3" class="list-group">
 
-            </ul>
-        </div>
-        <div class="col-md-4">
-            <ul id="list-3" class="list-group">
-
-            </ul>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
     <script src="js/jquery.js"></script>
