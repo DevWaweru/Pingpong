@@ -94,15 +94,17 @@
     font-family: 'Rancho';
 }
 
-a.btn {
+a.btn, button.btn{
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
     border: solid 1px rgba(230, 130, 16, 0.973);
     color: rgb(0, 93, 233);
+    background-color: white;
+    margin: 0.1em;
 }
 
-a:hover.btn {
+a:hover.btn, button:hover.btn{
     background-color: #d36c0c;
     color: white;
 }
@@ -112,12 +114,29 @@ a:hover.btn {
     padding-top: 5em;
     padding-bottom: 3em;
 }
-
+.list-results ul{
+    list-style-type: none;
+}
 .description a {
     color: rgb(0, 93, 233);
 }
 
 .description h2 {
     text-align: center;
+    font-family: "Julius Sans", sans-serif;
+}
+
+.form-control{
+    width: 30vw;
+}
+.footer{
+    background-color: black;
+    text-align: center;
+}
+.footer h5{
+    margin: 0;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    color: white;
     font-family: "Julius Sans", sans-serif;
 }

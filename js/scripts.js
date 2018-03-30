@@ -14,13 +14,6 @@ var condition = function (figure) {
 }
 // Frontend Logic
 $(document).ready(function () {
-    var noTries = parseInt(prompt("How many Tries?  "))
-    $("ul#list-2").empty;
-    for (steps = 1; steps <= noTries; steps++) {
-        answer = condition(steps);
-        $("ul#list-2").append("<li>" + answer + "</li>");
-    }
-
     // Smooth scrolling using jQuery easing
     $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -57,5 +50,21 @@ $(document).ready(function () {
     navbarCollapse();
     // Collapse the navbar when page is scrolled
     $(window).scroll(navbarCollapse);
+
+    $("form#get-results").submit(function (event) {
+        event.preventDefault();
+        $("ul#list-1").html("");
+        $("ul#list-2").html("");
+        var listName = "";
+        var noTries = $("#user-input").val();
+        for (steps = 1; steps <= noTries; steps++) {
+            answer = condition(steps);
+            if (noTries >= 50) {
+                if (steps <= (noTries / 2)) listName = "list-1";
+                else listName = "list-2";
+            } else if (noTries < 50) listName = "list-2";
+            $("ul#" + listName).append("<li>" + answer + "</li>");
+        }
+    });
 
 });

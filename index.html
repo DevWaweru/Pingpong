@@ -73,32 +73,31 @@
                         <li>Numbers divisible by 5 become 'Pong'</li>
                         <li>Numbers divisible by 15 become 'Ping Pong!'</li>
                     </ol>
-                    <div class="form-group">
-                        <label for="user-input">Enter your number here:</label>
-                        <input type="number" id="user-input" class="form-control" required>
-                    </div>
-                    <a href="" class="btn btn-default btn-lg">Find Out</a>
+                    <form id="get-results">
+                        <div class="form-group">
+                            <label for="user-input">Enter your number here:</label>
+                            <input type="number" id="user-input" class="form-control" required>
+                        </div>
+                        <button type="submit" class="btn btn-default btn-lg" id="find-out">Find Out</button>
+                    </form>
+                    <a href="#the-end" class="btn btn-default btn-lg js-scroll-trigger">Go to bottom of list</a>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-6 list-results">
                     <ul id="list-1" class="list-group">
-
                     </ul>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-6 list-results">
                     <ul id="list-2" class="list-group">
-
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <ul id="list-3" class="list-group">
-
                     </ul>
                 </div>
             </div>
         </div>
     </div>
+    <footer class="footer" id="the-end">
+        <h5>Copyright &copy; Ping Pong 2018.</h5>
+    </footer>
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery-easing/jquery.easing.js"></script>
