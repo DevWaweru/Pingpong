@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href='https://fonts.googleapis.com/css?family=Allura' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Rock Salt' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Rancho' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Rochester' rel='stylesheet'>
@@ -12,25 +14,24 @@
     <link rel="stylesheet" href="css/font-awesome.css" type="text/css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="img/favicon.png">
     <title>Ping Pong</title>
 </head>
 
 <body id="topPage">
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navMain">
         <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="#topPage">Home</a>
+            <a class="navbar-brand smooth-scroll" href="#topPage">Home</a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                Menu
-                <i class="fa fa-bars"></i>
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu<i class="fa fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                        <a class="nav-link smooth-scroll" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#play-now">PLAY!</a>
+                        <a class="nav-link smooth-scroll" href="#play-now">PLAY!</a>
                     </li>
                 </ul>
             </div>
@@ -80,15 +81,15 @@
                         </div>
                         <button type="submit" class="btn btn-default btn-lg" id="find-out">Find Out</button>
                     </form>
-                    <a href="#the-end" class="btn btn-default btn-lg js-scroll-trigger">Go to bottom of list</a>
+                    <a href="#the-end" class="btn btn-default btn-lg smooth-scroll">Go to bottom of list</a>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-6 list-results">
+            <div class="row disp-results">
+                <div class="col-md-3 list-results">
                     <ul id="list-1" class="list-group">
                     </ul>
                 </div>
-                <div class="col-md-6 list-results">
+                <div class="col-md-3 list-results">
                     <ul id="list-2" class="list-group">
                     </ul>
                 </div>
@@ -100,7 +101,7 @@
     </footer>
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/jquery-easing/jquery.easing.js"></script>
+    <script src="js/jquery.easing.js"></script>
     <script src="js/scripts.js"></script>
 </body>
 

@@ -1,7 +1,8 @@
 // Backend Logic
 var outPut = "";
-var answer;
-
+var classUsed = "";
+var answer, getClass;
+// Decide whether answer is ping, pong or Ping Pong
 var condition = function (figure) {
     if (figure % 15 === 0) {
         outPut = "Ping Pong";
@@ -12,10 +13,20 @@ var condition = function (figure) {
     } else outPut = figure;
     return outPut;
 }
+var classFn = function (figure) {
+    if (figure % 15 === 0) {
+        classUsed = "red-class";
+    } else if (figure % 5 === 0) {
+        classUsed = "blue-class";
+    } else if (figure % 3 === 0) {
+        classUsed = "yellow-class";
+    } else classUsed = "";
+    return classUsed;
+}
 // Frontend Logic
 $(document).ready(function () {
-    // Smooth scrolling using jQuery easing
-    $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
+    // This facilitates smooth scrolling using jQuery easing
+    $('a.smooth-scroll[href*="#"]:not([href="#"])').click(function () {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
             var target = $(this.hash);
             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
@@ -28,7 +39,8 @@ $(document).ready(function () {
         }
     });
     // Closes responsive menu when a scroll trigger link is clicked
-    $('.js-scroll-trigger').click(function () {
+    // this is for small screens with small pixel widths
+    $('.smooth-scroll').click(function () {
         $('.navbar-collapse').collapse('hide');
     });
     //Scroll to the top
@@ -38,7 +50,7 @@ $(document).ready(function () {
         offset: 54
     });
 
-    // Collapse Navbar
+    // Collapse Navbar when the scroll is triggered
     var navbarCollapse = function () {
         if ($("#navMain").offset().top > 100) {
             $("#navMain").addClass("navbar-shrink");
@@ -46,11 +58,11 @@ $(document).ready(function () {
             $("#navMain").removeClass("navbar-shrink");
         }
     };
-    // Collapse now if page is not at top
+    // Collapse the nav bar is page is not at the top
     navbarCollapse();
-    // Collapse the navbar when page is scrolled
+    // Collapse the navbar when there is scroll activity
     $(window).scroll(navbarCollapse);
-
+    // Get the number of tries and display the results
     $("form#get-results").submit(function (event) {
         event.preventDefault();
         $("ul#list-1").html("");
@@ -59,11 +71,14 @@ $(document).ready(function () {
         var noTries = $("#user-input").val();
         for (steps = 1; steps <= noTries; steps++) {
             answer = condition(steps);
+            getClass = classFn(steps);
+            // if the number of tries is greater than 50, the results spill over to the next column
             if (noTries >= 50) {
                 if (steps <= (noTries / 2)) listName = "list-1";
                 else listName = "list-2";
             } else if (noTries < 50) listName = "list-2";
-            $("ul#" + listName).append("<li>" + answer + "</li>");
+            // Display the results
+            $("ul#" + listName).append("<li class="+getClass+">" + answer + "</li>");
         }
     });
 
