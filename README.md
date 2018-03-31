@@ -4,9 +4,11 @@
 
 ## Description
 The Ping Pong game in this context, shows if a whole number is a Ping, Pong or Ping Pong based on the following criteria:
+
     1. Numbers divisible by 3 become 'Ping'
     2. Numbers divisible by 5 become 'Pong'
     3. Numbers divisible by 15 become 'Ping Pong!'
+    
 The results are then displayed with the limit being the number entered by the user.
 
 ## Preview
