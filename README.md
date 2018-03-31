@@ -1,13 +1,12 @@
 # Pingpong
-#### Second Independent Project for Moringa prep class , March 30th, 2018
+#### Third Independent Project for Moringa prep class , March 30th, 2018
 #### By **Richard Waweru**
 
 ## Description
 The Ping Pong game in this context, shows if a whole number is a Ping, Pong or Ping Pong based on the following criteria:
-    1. Number is divisible by 3 become 'Ping'
-    2. Number is divisible by 5 become 'Pong'
-    3. Number is divisible by 15 become 'Ping Pong!'
-
+    1. Numbers divisible by 3 become 'Ping'
+    2. Numbers divisible by 5 become 'Pong'
+    3. Numbers divisible by 15 become 'Ping Pong!'
 The results are then displayed with the limit being the number entered by the user.
 
 ## Preview
