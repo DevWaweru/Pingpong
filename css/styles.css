@@ -19,12 +19,9 @@
     border: 1px solid rgb(0, 93, 233);
 }
 
-#navMain .navbar-brand {
-    font-weight: 700;
-}
-
 #navMain a {
     color: white;
+    text-decoration: none;
 }
 
 #navMain .navbar-nav .nav-item:active,
