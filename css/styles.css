@@ -16,7 +16,7 @@
     font-size: 14px;
     padding: 11px;
     color: white;
-    border: 1px solid rgb(0, 93, 233);
+    border: 0px;
 }
 
 #navMain a {
@@ -88,7 +88,7 @@
 
 .about h3,
 .description h3 {
-    font-family: 'Rancho';
+    font-family: 'Rancho',sans-serif;
 }
 
 a.btn,
