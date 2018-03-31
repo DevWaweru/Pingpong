@@ -13,6 +13,7 @@ var condition = function (figure) {
     } else outPut = figure;
     return outPut;
 }
+// Decide what class to allocate the Pings, Pongs and Ping Pongs
 var classFn = function (figure) {
     if (figure % 15 === 0) {
         classUsed = "red-class";
@@ -38,7 +39,7 @@ $(document).ready(function () {
             }
         }
     });
-    // Closes responsive menu when a scroll trigger link is clicked
+    // Closes responsive menu when a smooth scroll class is triggered
     // this is for small screens with small pixel widths
     $('.smooth-scroll').click(function () {
         $('.navbar-collapse').collapse('hide');
@@ -58,10 +59,11 @@ $(document).ready(function () {
             $("#navMain").removeClass("navbar-shrink");
         }
     };
-    // Collapse the nav bar is page is not at the top
+    // Collapse the nav bar if page is not at the top
     navbarCollapse();
     // Collapse the navbar when there is scroll activity
     $(window).scroll(navbarCollapse);
+
     // Get the number of tries and display the results
     $("form#get-results").submit(function (event) {
         event.preventDefault();
@@ -78,7 +80,7 @@ $(document).ready(function () {
                 else listName = "list-2";
             } else if (noTries < 50) listName = "list-2";
             // Display the results
-            $("ul#" + listName).append("<li class="+getClass+">" + answer + "</li>");
+            $("ul#" + listName).append("<li class=" + getClass + ">" + answer + "</li>");
         }
     });
 
