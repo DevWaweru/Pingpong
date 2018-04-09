@@ -3,6 +3,9 @@
 #### By **Richard Waweru**
 
 ## Description
+Ping Pong is a simple fun app.
+
+## Specification
 The Ping Pong game in this context, shows if a whole number is a Ping, Pong or Ping Pong based on the following criteria:
 
     1. Numbers divisible by 3 become 'Ping'
@@ -12,7 +15,7 @@ The Ping Pong game in this context, shows if a whole number is a Ping, Pong or P
 The results are then displayed with the limit being the number entered by the user.
 
 ## Preview
-**[View Live Preview](https://devwaweru.github.io/Pingpong)**
+**[View Live Preview](https://devwaweru.github.io/Pingpong)** to view the live site.
 
 ## Known Bugs
 No bugs so far. If found, email me at developer.waweru@gmail.com
